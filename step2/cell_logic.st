@@ -33,7 +33,7 @@ PROGRAM cell_logic
  END_IF;
 
  (* Robot timeout: counts only while waiting for the robot *)
- Robot_Timer(IN := (State = 2), PT := T#10s);
+ Robot_Timer(IN := (State = 2), PT := T#60s);
 
  CASE State OF
  0: (* IDLE *)
